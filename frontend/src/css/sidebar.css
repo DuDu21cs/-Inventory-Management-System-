@@ -1,34 +1,110 @@
+/* ---- SIDEBAR ---- */
 .sidebar {
-  background-color: #ffc0cb;  
-  color: #5a0033;  
-  height: 100vh;  
-  width: 220px;   
+  background-color: #DFBD69;
+  color: #5a0033;
+  height: 100vh;
+  width: 220px;
   padding: 20px;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; 
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .d-flex .flex-grow-1 {
   margin-left: 220px;
-  padding: 20px;  
+  padding: 20px;
 }
 
 .navbar {
   padding: 10px;
-  background-color: #ffffff;
-  z-index: 1000; 
+  background-color: #000000;
+  z-index: 1000;
 }
 
 .main-content {
   padding: 20px;
-  background-color: #f4f4f4;
-  
+  background-color: #000000;
 }
+
 .sidebar .nav-link {
-  font-weight: 800;  
+  font-weight: 800;
 }
 
 .sidebar {
-  font-weight: 600; 
+  font-weight: 600;
+}
+
+/* ---- DARK MODE TOGGLE BUTTON ---- */
+.dark-mode-toggle {
+  margin-top: auto;
+  background-color: transparent;
+  border: 2px solid #5a0033;
+  color: #5a0033;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #5a0033;
+  color: #DFBD69;
+}
+
+/* ---- DARK MODE STYLES ---- */
+body.dark {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark .sidebar {
+  background-color: #1a1a1a;
+  color: #DFBD69;
+}
+
+body.dark .sidebar .nav-link {
+  color: #DFBD69 !important;
+}
+
+body.dark .navbar {
+  background-color: #1a1a1a !important;
+}
+
+body.dark .main-content {
+  background-color: #121212 !important;
+}
+
+body.dark .dark-mode-toggle {
+  border-color: #DFBD69;
+  color: #DFBD69;
+}
+
+body.dark .dark-mode-toggle:hover {
+  background-color: #DFBD69;
+  color: #121212;
+}
+
+body.dark .card,
+body.dark .dashboard-card,
+body.dark .table,
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+  border-color: #333 !important;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4, 
+body.dark h5 {
+  color: #DFBD69 !important;
 }

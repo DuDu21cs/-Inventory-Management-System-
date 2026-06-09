@@ -11,20 +11,20 @@
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  background-color: #f8b6c1;
-  border: 1px solid #e48ca0;
+  background-color: #000000;
+  border: 1px solid #000000;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .auth-card h3 {
-  color: #d63384;
+  color: #DFBD69;
 }
 
 .btn-primary {
-  background-color: #d63384;
+  background-color: #DFBD69;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #c2186a;
+  background-color: #DFBD69;
 }
